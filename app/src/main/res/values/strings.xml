@@ -1,0 +1,16 @@
+<!--
+Tabita Lopes Paradizzo
+StudentID: 19551
+Email: tabitalp@hotmail.com
+-->
+<resources>
+    <string name="app_name">BikeApp</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="MAPLOGGING">MAPLOGGING</string>
+    <string name="MARKERCLICKED">Marker is clicked</string>
+    <string name="DUBLIN_BIKE_API_KEY">414a6db81bfb5e46e6d15bfe7d9940c88a316f74</string>
+    <string name="DUBLIN_BIKE_API_URL"><![CDATA[https://api.jcdecaux.com/vls/v1/stations?contract=dublin&apiKey=]]></string>
+    <string name="title_station_activity">Station</string>
+    <string name="title_stations_activity">Stations</string>
+    <string name="savePreferences">Save Preferences</string>
+</resources>

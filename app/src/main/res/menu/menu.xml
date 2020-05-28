@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Tabita Lopes Paradizzo
+StudentID: 19551
+Email: tabitalp@hotmail.com
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group_one">
+    <item
+            android:id="@+id/action_list"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title="Show station list"/>
+
+    <item
+            android:id="@+id/favorites"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title="Favorites"/>
+    </group>
+
+
+</menu>

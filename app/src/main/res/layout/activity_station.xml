@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Tabita Lopes Paradizzo
+StudentID: 19551
+Email: tabitalp@hotmail.com
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".StationActivity">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/linearLayout"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+        <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_height="200dp" android:layout_width="match_parent"/>
+        <Button
+                android:id="@+id/buttonSavePreferences"
+                android:text="@string/savePreferences"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+        />
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/textFieldLayout" android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" android:layout_marginTop="10dp" android:gravity="fill_vertical">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textViewStationTitle" android:textSize="24sp"
+                    android:textStyle="bold" android:layout_marginBottom="5dp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textViewStationId"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textViewStationStatus"
+                    android:textStyle="bold"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textViewStationStand"
+            />
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" android:layout_marginTop="50dp">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" android:layout_marginRight="5dp">
+                    <TextView
+                            android:text="TextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textViewBikesAvailable"
+                            android:textSize="36sp"
+                            android:textStyle="bold" android:gravity="center|center_vertical"
+                            android:layout_marginRight="50dp"/>
+                    <TextView
+                            android:text="Bikes Available"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView13"
+                            android:gravity="center|center_vertical" android:layout_marginRight="50dp"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" android:layout_marginLeft="5dp">
+                    <TextView
+                            android:text="TextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textViewStationAvailable"
+                            android:textSize="36sp"
+                            android:textStyle="bold" android:gravity="center|center_vertical"
+                    />
+                    <TextView
+                            android:text="Free Stands"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" android:id="@+id/textView15"
+                            android:gravity="center|center_vertical"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
